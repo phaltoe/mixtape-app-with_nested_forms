@@ -14,6 +14,19 @@
       <small>Please enter a name</small>
     <% end %>  
   </p>
+
+  <p>
+    Add Songs:
+
+    <ul>
+      <%= f.fields_for :songs do |song_field| %>
+        <%= song_field.text_field :title %>
+      <% end %>  
+      <li>
+        
+      </li>
+    </ul>
+  </p>
   <%= f.submit %>
 
 <% end %>  

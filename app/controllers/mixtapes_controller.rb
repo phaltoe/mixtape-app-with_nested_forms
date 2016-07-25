@@ -18,6 +18,6 @@ class MixtapesController < ApplicationController
   private
 
   def mixtape_params
-    params.require(:mixtape).permit(:name)
+    params.require(:mixtape).permit(:name, :songs_attributes => [:title])
   end
 end
