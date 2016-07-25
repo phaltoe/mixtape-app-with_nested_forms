@@ -11,7 +11,7 @@ class MixtapesController < ApplicationController
       @mixtape.save
       raise "OwoW Yeah!"
     else
-      raise "BoooOh!"
+      render :new
     end
   end
 
