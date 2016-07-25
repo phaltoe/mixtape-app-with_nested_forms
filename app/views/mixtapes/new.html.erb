@@ -20,13 +20,12 @@
 
     <ul>
       <%= f.fields_for :songs do |song_field| %>
-        <%= song_field.text_field :title %>
+        <li><%= song_field.text_field :title %></li>       
       <% end %>  
-      <li>
-        
-      </li>
     </ul>
+
   </p>
+  
   <%= f.submit %>
 
 <% end %>  
